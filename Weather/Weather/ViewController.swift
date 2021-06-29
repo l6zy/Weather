@@ -267,7 +267,7 @@ class ViewController: UIViewController ,UIScrollViewDelegate{
         }else{
             
             try! fileManager.createDirectory(atPath: filePath,withIntermediateDirectories: true, attributes: nil)
-            let s = ""
+            let s = "[{\"id\":\"101200101\",\"name\":\"武汉\"}]"
             
             try! s.write(toFile: "\(filePath)/localCity.json", atomically: true, encoding: String.Encoding.utf8)
         }
